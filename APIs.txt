@@ -1,0 +1,9 @@
+localhost:3000/api/auth/signup                 //signup
+localhost:3000/api/auth/signin                 //signin
+localhost:3000/api/user/update/67579e2953ab461993984a74         //update user
+localhost:3000/api/user/delete/6758d72679fbfb3198e7e058         //delete user
+localhost:3000/api/user/signout                 //signout
+localhost:3000/api/post/create                  // post create
+localhost:3000/api/post/getposts                // getposts
+localhost:3000/api/user/getusers                // getusers
+localhost:3000/api/user/createadmin             // createadmin
