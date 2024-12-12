@@ -1,9 +1,71 @@
-localhost:3000/api/auth/signup                 //signup
-localhost:3000/api/auth/signin                 //signin
-localhost:3000/api/user/update/67579e2953ab461993984a74         //update user
-localhost:3000/api/user/delete/6758d72679fbfb3198e7e058         //delete user
-localhost:3000/api/user/signout                 //signout
-localhost:3000/api/post/create                  // post create
-localhost:3000/api/post/getposts                // getposts
-localhost:3000/api/user/getusers                // getusers
-localhost:3000/api/user/createadmin             // createadmin
+POST  localhost:3000/api/auth/signup                 //signup
+{
+    "username",      //required
+    "email",         //required
+    "profilePicture",
+    "password"  //required
+
+} 
+
+
+
+POST ocalhost:3000/api/auth/signin                 //signin
+{
+    "email",             //required
+    "password"          //required
+}
+
+
+PUT localhost:3000/api/user/update/67579e2953ab461993984a74         //update user
+
+DELETE localhost:3000/api/user/delete/6758d72679fbfb3198e7e058         //delete user
+
+POST localhost:3000/api/user/signout                 //signout
+
+POST localhost:3000/api/post/create                  // post create
+{
+    "userId",  returned 
+    "title",                       //required
+    "content",                     //required
+    "image",
+    "Category"
+}
+
+
+GET localhost:3000/api/post/getposts                // getposts
+
+
+GET localhost:3000/api/user/getusers                // getusers
+
+
+POST localhost:3000/api/user/createadmin             // createadmin
+
+{
+    "username",      //required
+    "email",         //required
+    "profilePicture",
+    "password"  //required
+
+} 
+
+
+
+POST localhost:3000/api/comment/create              // createComment
+{
+      "content",
+      "postId",  returned 
+      "userId",  returned 
+}
+
+
+GET localhost:3000/api/comment/getPostComments              // getPostComments  
+
+
+GET localhost:3000/api/comment/getcomments              // getcomments  
+
+PUT localhost:3000/api/comment/likeComment              // likeComment  
+
+PUT localhost:3000/api/comment/editComment              // editComment  
+
+DELETE localhost:3000/api/comment/deleteComment         // deleteComment
+
